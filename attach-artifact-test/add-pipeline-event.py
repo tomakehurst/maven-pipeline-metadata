@@ -18,7 +18,7 @@ notes=sys.argv[3]
 date=datetime.now().strftime('%Y%m%dT%H:%M:%SZ')
 
 print("Downloading existing pipeline metadata")
-os.system('mvn -Ppipe-meta dependency:copy')
+os.system('mvn -Ppipe-meta clean dependency:copy')
 
 if os.path.isfile(META_FILE_PATH):
 	pipelineMetaFile=open(META_FILE_PATH, 'r')
