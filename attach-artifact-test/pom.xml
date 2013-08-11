@@ -70,6 +70,7 @@
                                     <destFileName>pipeline-metadata.json</destFileName>
                                 </artifactItem>
                             </artifactItems>
+                            <localRepositoryDirectory>${project.build.directory}/tmprepo</localRepositoryDirectory>
                         </configuration>
                     </plugin>
                 </plugins>
